@@ -1,0 +1,64 @@
+.cartIconContanier {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: var(--yellow) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.quantityControl {
+  width: 130px;
+  height: 49px;
+  border-radius: 25px;
+  padding: 0 10px;
+  border: 1px solid var(--bordergary) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cancelImg {
+    cursor: pointer;
+}
+.colthesImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.inputContanierForCode{
+  width: 300px;
+  height: 47px;
+  border-radius: 30px;
+  border: 1px solid var(--bordergary) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputContanierForCode > input:focus {
+  outline: none;
+}
+.sendCode {
+  width: 172px;
+  height: 48px;
+  background-color: var(--yellow) !important;
+  color: black;
+  border: 0 !important;
+}
+.sendCode:hover {
+  background-color: var(--yellowHover) !important;
+  border: 0 !important;
+}
+#increase , #decrease {
+  cursor: pointer;
+  user-select: none;
+}
+.backToTheLastPage {
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .prodcutNameId p{
+        font-size: 13px;
+    }
+}
+

@@ -1,0 +1,79 @@
+.nav-item button {
+    width: 190px;
+    height: 60px;
+    color: #D4D4D4 !important;
+    background-color: var(--white) !important;
+    border-radius: 30px !important;
+    
+}
+.nav-item button.cliced {
+    color: black !important;
+    border: 1px solid var(--yellow);  
+    border-radius: 30px !important;
+}
+.phonePic {
+    width: 70px;
+    height: 70px;
+}
+.paperPic {
+    width: 70px;
+    height: 70px;
+}
+.warningsPic {
+    width: 215px;
+    height: 40px;
+}
+.descriptionContanier .description {
+    font-size: 14px;
+}
+.materialContanier .material {
+    font-size: 14px;
+}
+.ratNumber {
+    font-size: 59px;
+    font-weight: bold;
+}
+div.line {
+    width: 160px;
+    height: 2px;
+    background-color: #a2a1a1;
+}
+.percent1{
+    width: 10%;
+    height: 100%;
+    background-color: var(--yellow);
+}
+.percent2{
+    width: 20%;
+    height: 100%;
+    background-color: var(--yellow);
+}
+.precent3{
+    width: 80%;
+    height: 100%;
+    background-color: var(--yellow);
+}
+.ratingContanier > a {
+    width: 190px;
+    height: 60px;
+    background-color: var(--yellow);
+    border: 0 !important;
+    color: black;
+}
+.ratingContanier > a:hover {
+    background-color: #da9423 !important ;
+    border-color: var(--yellow) !important;
+}
+.content {
+    font-size: 12px;
+    font-weight: lighter;
+}
+@media (max-width:576px) {
+    .nav-item button{
+        width: 140px;
+        height: 50px;
+    }
+    div.line {
+        width: 130px;
+    }
+}

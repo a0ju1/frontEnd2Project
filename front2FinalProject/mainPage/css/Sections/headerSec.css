@@ -1,0 +1,73 @@
+.navbar .container .navbar-brand span {
+  color: var(--white)  ;
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--white) ;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: black !important;
+}
+.navbar-toggler {
+  padding: 0px !important;
+}
+.iconsContainer > i {
+  cursor: pointer;
+}
+.textBlack {
+  color: black !important;
+}
+.clickBorder{
+  border-bottom: 3px solid var(--yellow);
+}
+
+/* this css for the number of product */
+
+.fa-cart-shopping div.number {
+  font-size: 9px;
+  background-color: var(--yellow);
+  color: white ;
+  padding: 5px;
+  border-radius: 50%;
+  z-index: 10 !important;
+}
+
+/* media code section */
+
+@media (max-width: 768px) {
+  .iconsContainer {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .iconsContainer {
+    display: flex;
+    justify-content: end;
+
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    background: var(--white) !important;
+  }
+  .navbar .container .navbar-brand span {
+    color: black !important;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: black !important;
+  }
+  .iconsContainer i {
+    color: black !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler i {
+    color: black !important;
+  }
+  .clickBorder{
+    width: 50px;
+    border-bottom: 3px solid var(--yellow);
+  }
+}

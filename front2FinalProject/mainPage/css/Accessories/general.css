@@ -1,0 +1,308 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+/* colors */
+:root {
+  --white: #fff;
+  --white2: #F6F6F6;
+  --yellow: #fbb03b;
+  --yellowHover: #c58b2f;
+  --yellow2: #FFF3DF;
+  --red: #FF0000;
+  --gray: #CECECE;
+  --bordergary: #D8D8D8;
+}
+
+/* for the pre load */
+:root {
+  --hue: 223;
+  --bg: hsl(var(--hue), 10%, 90%);
+  --fg: hsl(var(--hue), 10%, 10%);
+  --primary: hsl(var(--hue), 90%, 55%);
+  --trans-dur: 0.3s;
+  /* font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320)); */
+}
+
+/* general */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* start login modal css */
+.container>div>p:nth-child(2) {
+  color: #7D7D7D;
+}
+
+.modal-body .mainForm>input,
+#phone {
+  width: 345px !important;
+  height: 56px !important;
+  border: 1px solid var(--bordergary) !important;
+  border-radius: 30px;
+  box-shadow: 0 !important;
+  padding: 0 30px;
+}
+
+#phone {
+  padding-left: 120px;
+}
+
+.modal-body .mainForm>input:focus,
+#phone:focus {
+  outline: 0 !important;
+}
+
+.socialMediaBtns a:nth-child(1) {
+  width: 167px !important;
+  height: 56px !important;
+  background: #3B5998 !important;
+  border: 0;
+}
+
+.socialMediaBtns a:nth-child(1):hover {
+  background: #29457f !important;
+  border-color: #213d75 !important;
+}
+
+.socialMediaBtns a:nth-child(2) {
+  color: black;
+  width: 167px !important;
+  height: 56px !important;
+  background: var(--white) !important;
+  border: 1px solid #F1584D;
+}
+
+.socialMediaBtns a:nth-child(2):hover {
+  background: #ebebeb !important;
+  border-color: #F1584D !important;
+}
+
+.btnContanier .signInBtn {
+  width: 340px !important;
+  height: 56px !important;
+  color: black;
+  background: var(--yellow) !important;
+  border: 0;
+}
+
+.btnContanier .signInBtn:hover {
+  background: #ca8e2c !important;
+
+}
+
+.singnUPSpan,
+.forgotPasswordBtn {
+  cursor: pointer !important;
+}
+
+.collapse .card {
+  position: absolute !important;
+  overflow: auto;
+  top: 100% !important;
+  left: 0%;
+  width: 100%;
+  height: 550px;
+}
+
+/* this code for tell library */
+.iti {
+  display: flex;
+  justify-content: center;
+}
+
+.iti__selected-flag {
+  background: #f0efef;
+  margin-top: 8px;
+  height: 40px;
+  margin-left: 85px;
+  padding: 0 25px;
+  border: 1px solid var(--bordergary);
+  border-radius: 30px;
+}
+
+#phone::placeholder {
+  text-align: start;
+}
+
+@media (max-width : 992px) {
+  .collapse .card {
+    position: static !important;
+    overflow: auto;
+    height: 400px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* end login modal css */
+
+/* pre loader */
+.preloader {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+  color: var(--fg);
+  font: 1em/1.5 "DM Sans", sans-serif;
+  display: grid;
+  gap: 100px;
+  align-content: center;
+  transition:
+    background-color var(--trans-dur),
+    color var(--trans-dur);
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+}
+
+.preloader__text {
+  position: relative;
+  height: 1.5em;
+}
+
+.preloader__msg {
+  width: 100%;
+  color: black;
+
+}
+
+.preloader__msg--last {
+  animation-direction: reverse;
+  animation-delay: 14s;
+  visibility: hidden;
+}
+
+.cartLoad {
+  display: block;
+  margin: 0 auto 1.5em auto;
+  width: 8em;
+  height: 8em;
+}
+
+.cart__lines,
+.cart__top,
+.cart__wheel1,
+.cart__wheel2,
+.cart__wheel-stroke {
+  animation: cartLines 2s ease-in-out infinite;
+}
+
+.cart__lines {
+  stroke: var(--primary);
+}
+
+.cart__top {
+  animation-name: cartTop;
+}
+
+.cart__wheel1 {
+  animation-name: cartWheel1;
+  transform: rotate(-0.25turn);
+  transform-origin: 43px 111px;
+}
+
+.cart__wheel2 {
+  animation-name: cartWheel2;
+  transform: rotate(0.25turn);
+  transform-origin: 102px 111px;
+}
+
+.cart__wheel-stroke {
+  animation-name: cartWheelStroke
+}
+
+.cart__track {
+  stroke: hsla(var(--hue), 10%, 10%, 0.1);
+  transition: stroke var(--trans-dur);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 10%, 10%);
+    --fg: hsl(var(--hue), 10%, 90%);
+  }
+
+  .cart__track {
+    stroke: hsla(var(--hue), 10%, 90%, 0.1);
+  }
+}
+
+/* Animations */
+@keyframes msg {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99.9% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes cartLines {
+
+  from,
+  to {
+    opacity: 0;
+  }
+
+  8%,
+  92% {
+    opacity: 1;
+  }
+}
+
+@keyframes cartTop {
+  from {
+    stroke-dashoffset: -338;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 338;
+  }
+}
+
+@keyframes cartWheel1 {
+  from {
+    transform: rotate(-0.25turn);
+  }
+
+  to {
+    transform: rotate(2.75turn);
+  }
+}
+
+@keyframes cartWheel2 {
+  from {
+    transform: rotate(0.25turn);
+  }
+
+  to {
+    transform: rotate(3.25turn);
+  }
+}
+
+@keyframes cartWheelStroke {
+
+  from,
+  to {
+    stroke-dashoffset: 81.68;
+  }
+
+  50% {
+    stroke-dashoffset: 40.84;
+  }
+}

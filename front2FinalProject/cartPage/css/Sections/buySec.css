@@ -1,0 +1,123 @@
+.saleBtn {
+    font-size: 11px;
+    background-color: var(--red) !important;
+}
+
+.productNameIn {
+    font-size: 30px;
+}
+
+.produtId {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.priceIn p:nth-child(1) {
+    color: var(--red);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.priceIn del:nth-child(2) {
+    color: var(--gray);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.priceContanier p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.colorBox {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+}
+
+.colorBox span {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: 1px solid #E6E6E6;
+    cursor: pointer;
+}
+
+.colorBox:nth-child(2) span {
+    background-color: #FFE3B7;
+}
+
+.colorBox:nth-child(3) span {
+    background-color: #2900FF;
+}
+
+.colorBox:nth-child(4) span {
+    background-color: var(--white);
+}
+
+.formPart form select {
+    width: 184px;
+    height: 49px;
+    color: #AAAAAA;
+    border-radius: 25px;
+    display: flex;
+    padding: 0 10px;
+    border: 1px solid var(--bordergary);
+
+}
+
+.formPart form select:focus {
+
+    box-shadow: 0;
+}
+
+.quantityControl {
+    width: 130px;
+    height: 49px;
+    border-radius: 25px;
+    padding: 0 10px;
+    border: 1px solid var(--bordergary);
+}
+
+.quantity button {
+    width: 189px;
+    height: 49px;
+    color: black !important;
+    background-color: var(--yellow) !important;
+    border-color: var(--yellow);
+}
+
+.quantity button:hover {
+    background-color: #da9423 !important;
+    border-color: var(--yellow) !important;
+}
+
+.carousel-indicators button {
+    width: 100px !important;
+    background-color: var(--white) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+}
+
+.carousel-indicators .active {
+    background-color: black !important;
+}
+
+.theChoosenOne {
+    border: 2px solid #140dd4 !important;
+}
+
+#increase,
+#decrease {
+    cursor: pointer;
+    user-select: none;
+}
+
+.styleOfClothes .smallScreenTitle {
+    font-size: 12px !important;
+  }

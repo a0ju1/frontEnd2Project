@@ -1,0 +1,103 @@
+.footerSec .part1{
+    height: 40vh ;
+    background-image: url(../../img/page1/footreImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part1 form p {
+    font-size: 29px;
+    color: var(--white);
+}
+.part1 form input {
+    width: 340px;
+    height: 50px;
+    border: 0;
+    border-radius: 30px;
+}
+.part1 form input:focus {
+  outline: none;
+}
+.part1 form input::placeholder {
+  padding: 20px;
+}
+
+.part1 form button {
+    width: 120px;
+    height: 50px;
+    background-color: #FBB03B; 
+    border: 0 ;
+}
+.box1Contant {
+    color: #808080 !important;
+}
+.footreLogo span {
+    color: var(--yellow) ;
+}
+.part1 form button:hover {
+    background-color: #c37e10; 
+}
+.part2Box2 p {
+    font-weight: bold;
+}
+.part2Box2 a {
+    text-decoration: none;
+    color: black;
+}
+.part2Box3 p {
+    font-weight: bold;
+}
+.part2Box3 a {
+    text-decoration: none;
+    color: black;
+}
+.part2Box4 p {
+    font-weight: bold;
+}
+.part2Box4 a {
+    text-decoration: none;
+    color: black;
+}
+.part2Box1 a:hover {
+    color: rgb(158, 153, 153);
+}
+.part2Box2 a:hover {
+    color: rgb(158, 153, 153);
+}
+.part2Box3 a:hover {
+    color: rgb(158, 153, 153);
+}
+.part2Box4 a:hover {
+    color: rgb(158, 153, 153);
+}
+.copyRights{
+    color: #AEAEAE;
+    font-size: 12px;
+}
+@media (max-width: 576px){
+    .footerSec .part1{
+        height: 50vh ;
+    }
+    .part1 form p {
+        font-size: 20px;
+    }
+    .part1 form input {
+        width: 280px;
+        height: 50px;
+        border: 0;
+        border-radius: 30px;
+    }
+    .part1 form button{
+        width: 80px;
+        height: 50px;
+    }
+}
+@media(min-width: 576px) and (max-width: 768px){
+    .footerSec .part1{
+        height: 40vh ;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .footerSec .part1{
+        height: 40vh ;
+    }
+}

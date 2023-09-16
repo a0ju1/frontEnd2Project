@@ -1,0 +1,54 @@
+.newProdecutSec{
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    
+}
+.productContant {
+    cursor: pointer;
+}
+.textContant {
+    position: absolute;
+    top: 40%;
+    color: var(--white);
+}
+.textContant.box3 {
+    position: absolute;
+    top: 25%;
+    color: var(--white);
+}
+.productBtn {
+    font-size: 18px !important;
+}
+@media (max-width: 768px){
+    .textContant {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        color: var(--white);
+    }
+    .textContant p {
+        font-size: 18px !important;
+        margin: 0 0 0 5px;
+    }
+    .textContant a {
+        font-size: 14px !important;
+    }
+}
+@media(min-width: 768px) and (max-width: 992px){
+    .productBtn {
+        font-size: 20px !important;
+    }
+    .textContant {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        color: var(--white);
+    }
+    .textContant p {
+        font-size: 24px !important;
+    }
+    .textContant a {
+        font-size: 18px !important;
+    }
+}
